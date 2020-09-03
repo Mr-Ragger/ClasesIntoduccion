@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		// Dados los coeficientes de una ecucaion de segundo grado:
 		// - Mostrar si tiene solucion unica
@@ -47,3 +46,35 @@ public class Main {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Creado por Anxo Rodriguez
