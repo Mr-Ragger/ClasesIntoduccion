@@ -10,11 +10,12 @@ public class Main {
 		double numeroDouble = Math.random() * 100;
 		int numeroInt = (int) numeroDouble;
 		int numeroTeclado;
+		int contador = 0;
 
 		System.out.println("Introduce un numero: ");
 		numeroTeclado = sc.nextInt();
 		while (numeroTeclado != numeroInt) {
-
+			contador++;
 			if (numeroTeclado > numeroInt) {
 
 				System.out.println("Introduce un numero menor: ");
@@ -28,7 +29,9 @@ public class Main {
 			}
 
 		}
+
 		System.out.println("Has acertado !! :D");
+		System.out.println("Numero de intentos: " + contador);
 
 		sc.close();
 	}
