@@ -6,7 +6,7 @@ public class Main {
 
 		for (int i = 1;i <11; i++) {
 			
-			System.out.println(i + " x " + "3 = " + i*3 );
+			System.out.println("3" + " x " + i + " = " + i * 3 );
 		}
 		
 	}
