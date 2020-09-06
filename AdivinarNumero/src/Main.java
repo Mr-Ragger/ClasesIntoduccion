@@ -10,20 +10,20 @@ public class Main {
 		double numeroDouble = Math.random() * 100;
 		int numeroInt = (int) numeroDouble;
 		int numeroTeclado;
-		int contador = 0;
+		int contador = 1;
 
-		System.out.println("Introduce un numero: ");
+		System.out.print("Introduce un numero: ");
 		numeroTeclado = sc.nextInt();
 		while (numeroTeclado != numeroInt) {
 			contador++;
 			if (numeroTeclado > numeroInt) {
 
-				System.out.println("Introduce un numero menor: ");
+				System.out.print("Introduce un numero menor: ");
 				numeroTeclado = sc.nextInt();
 
 			} else {
 
-				System.out.println("Introduce un numero mayor: ");
+				System.out.print("Introduce un numero mayor: ");
 				numeroTeclado = sc.nextInt();
 
 			}
