@@ -6,7 +6,8 @@ public class Main {
 
 		Coche miCocheRojo = new Coche();
 		Coche miCocheGranate = new Coche();
-		
+		Coche seat = new Coche("Ibiza", "Gris");
+		Coche bmw = new Coche("170cv", "Negro", "M3");
 		
 		miCocheRojo.marca = "Seat";
 		miCocheGranate.marca = "Volvo";
@@ -22,6 +23,9 @@ public class Main {
 		
 		miCocheRojo.puertas = 3;
 		miCocheGranate.puertas = 5;
+		
+		
+		
 		
 		
 		System.out.println(miCocheRojo.marca + " " +  miCocheRojo.modelo + " " + miCocheRojo.color + " " + miCocheRojo.año + " " + miCocheRojo.puertas + " puertas");
