@@ -6,9 +6,9 @@ public class Main {
 
 		Circulo miCirculo = new Circulo(12);
 		
-		miCirculo.calcularArea();
+		double area = miCirculo.calcularArea();
 		
-		System.out.println("El area del circulo: " + miCirculo.area);
+		System.out.println("El area del circulo: " + area);
 	}
 
 }
