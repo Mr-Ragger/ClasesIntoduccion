@@ -10,6 +10,8 @@ public class Main {
 		System.out.println(miEcuacion);
 		
 		System.out.println("Nº Soluciones: " + miEcuacion.calcularNumeroSoluciones());
+		
+		System.out.println("Solucion: " + miEcuacion.calcularSoluciones().length);
 	}
 
 }
