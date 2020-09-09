@@ -1,58 +1,56 @@
 
 public class Point {
-	private int x1;
-	private int y1;
-	private int x2;
-	private int y2;
-	private int resultadoX;
-	private int resultadoY;
+	int x;
+	int y;
+	int resultadoX;
+	int resultadoY;
 	
 	
 	
-	public Point(int x1, int y1, int x2, int y2) {
-		this.x1 = x1;
-		this.x2 = x2;
-		this.y1 = y1;
-		this.y2 = y2;
-	
-		System.out.println("la primera ubiccacion esta en " + x1 + "," + y1 + " y la segunda esta en " + x2 + "," + y2);
+	public Point(int x1, int y1) {
+		this.x = x1;
+		this.y = y1;
+		
 	}
 	
 	
-	public void calcularDistancia() {		
+	public double calcularDistancia(int x, int y) {		
 		
-			resultadoX = this.x2 - this.x1;
-			resultadoY = this.y2 - this.y1;
+			resultadoX = this.x - x;
+			resultadoY = this.y - y;
 			
-//			System.out.println(resultadoX + "," + resultadoY);
+			double distancia = Math.sqrt(resultadoX * resultadoX + resultadoY * resultadoY);
+
+			return distancia;
+			
+			//			System.out.println(resultadoX + "," + resultadoY);
 		
 		/////////////////////////////////////GETTERS Y SETTERS///////////////////////////////////////////////////////
 	}
-	public int getValorX1() {
-		return this.x1;
-	}
-	public void setValorX1(int x1) {
-		this.x1 = x1;
-	}
-	public int getValorY1() {
-		return this.x1;
-	}
-	public void setValorY1(int y1) {
-		this.y1 = y1;
-	}
-	public int getValorX2() {
-		return this.x1;
-	}
-	public void setValorX2(int x2) {
-		this.x2 = x2;
-	}
-	public int getValorY2() {
-		return this.x1;
-	}
-	public void setValorY2(int y2) {
-		this.y2 = y2;
+	
+	public double calcularDistancia (Point point) {
+		
+		int distanciaY = this.y - point.y;
+		int distanciaX = this.x - point.x;
+		
+		double distanciaDos = Math.sqrt(distanciaX * distanciaX + distanciaY * distanciaY);
+		
+		return distanciaDos;
 	}
 	
+	
+	public int getValorX1() {
+		return this.x;
+	}
+	public void setValorX1(int x1) {
+		this.x = x1;
+	}
+	public int getValorY1() {
+		return this.x;
+	}
+	public void setValorY1(int y1) {
+		this.y = y1;
+	}
 	
 	
 	public String toString() {
