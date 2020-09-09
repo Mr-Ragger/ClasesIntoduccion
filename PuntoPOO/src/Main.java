@@ -22,7 +22,6 @@ public class Main {
 //		System.out.println("1. Definir la primera coordenada");
 //		System.out.println("2. Definir la segunda coordenada");
 //		System.out.println("3. Calcular e imprimir la distancia entre coordenadas");
-
 //		selector = sc.nextInt();
 //
 //		switch (selector) {
